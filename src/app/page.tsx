@@ -9,6 +9,25 @@ import { useState } from "react"
 
 const functionalities = [
   {
+    title: "Gestão Financeira",
+    description: "Controle financeiro e planejamento orçamentário",
+    sections: [
+      {
+        title: "Orçamento",
+        links: [
+          { href: "/financeiro/planejamento", label: "Planejamento Orçamentário" },
+          { href: "/financeiro/resultados", label: "Resultados Financeiros" }
+        ]
+      },
+      {
+        title: "Análises",
+        links: [
+          { href: "/financeiro/forecasting", label: "Forecasting de Crescimento" }
+        ]
+      }
+    ]
+  },
+  {
     title: "Acesso e Segurança",
     description: "Navegue pelas funcionalidades implementadas",
     sections: [
@@ -41,6 +60,24 @@ const functionalities = [
       }
     ]
   },
+  
+  // ADICIONE NOVAS FUNCIONALIDADES AQUI
+  // Copie e cole o modelo abaixo:
+  /*
+  {
+    title: "Nome da Funcionalidade",
+    description: "Breve descrição da funcionalidade",
+    sections: [
+      {
+        title: "Nome da Seção",
+        links: [
+          { href: "/rota/pagina", label: "Nome do Link" },
+          { href: "/rota/outra-pagina", label: "Nome do Outro Link" }
+        ]
+      }
+    ]
+  },
+  */
   {
     title: "Próxima Funcionalidade",
     description: "Em desenvolvimento",
