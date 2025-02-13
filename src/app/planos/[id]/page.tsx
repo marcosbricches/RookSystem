@@ -1,4 +1,5 @@
 // app/planos/[id]/page.tsx
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -35,14 +36,12 @@ import {
 } from "@/components/ui/table"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
-interface PageProps {
-  params: {
-    id: string
-  }
-  searchParams?: { [key: string]: string | string[] | undefined }
+type PageProps = {
+  params: { id: string }
+  searchParams?: Record<string, string | string[] | undefined>
 }
 
-export default async function PlanoDetalhesPage({ params, searchParams }: PageProps) {
+export default function PlanoDetalhesPage({ params, searchParams }: PageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto py-16">
